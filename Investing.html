@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Investing</title>
+<style>
+body{background-color:skyblue;}
+a:link {text-decoration: none;color: Black;text-align: center;
+text-spacing:20%;font-size:0.7cm}
+hr{height: 5px; background-color:black;}
+label{font-size:25px;}
+input[type=text] {height:5%; width:12%;}
+input[type=button] {height:5%; width:8%;}
+input[placeholder] {height:5%; width:8%;}
+table{border:5; font-size:25px;border-style: double;}
+</style>
+<script>
+function cal() 
+{
+var principle = parseFloat(document.getElementById("principle").value);
+var rate = parseFloat(document.getElementById("rate").value);
+var time = parseFloat(document.getElementById("time").value);
+
+var value = (principle * rate * time) / 100;
+var total = principle + value;
+
+alert("Interest is "+"Rs " + value);
+document.getElementById("value").value = "Rs " + value;
+alert("Total Value is "+"Rs " + total);
+document.getElementById("total").value = "Rs " + total;
+}
+</script>
+</head>
+<body>
+<section>
+<img src="banking.png" height="100px" width="160">
+
+<a href="wsdmini.html" target="_parent">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="Form.html" target="_parent">Log In</a>&nbsp;&nbsp;&nbsp;
+<a href="Banking.html" target="_parent">Banking</a>&nbsp;&nbsp;&nbsp;
+<a href="Investing.html" target="_parent">Investing</a>&nbsp;&nbsp;&nbsp;
+<a href="Account.html" target="_parent">Want To Open An Account </a>
+</section>
+<hr>
+<section>
+<h1>Top Stock With Maximum Returns</h1>
+<table border="4">
+<tr>
+<th>S.r no.</th>
+<th>Name</th>
+<th>Value</th>
+<th>Dividend Yeild</th>
+</tr>
+<tr>
+<td><center>01.</center></td>
+<td><center>Reliance Industries Ltd.</center></td>
+<td><center>Rs.1381.70</center></td>
+<td><center>0.43%</center></td>
+</tr>
+<tr>
+<td><center>02.</center></td>
+<td><center>HDFC Bank Ltd.</center></td>
+<td><center>Rs.980.90</center></td>
+<td><center>1.2%</center></td>
+</tr>
+<tr>
+<td><center>03.</center></td>
+<td><center>Bharti Airtel Ltd.</center></td>
+<td><center>Rs.1939.90</center></td>
+<td><center>0.89%</center></td>
+</tr>
+<tr>
+<td><center>04.</center></td>
+<td><center>ICICI Bank Ltd.</center></td>
+<td><center>Rs.1380.30</center></td>
+<td><center>0.82%</center></td>
+</tr>
+<tr>
+<td><center>05.</center></td>
+<td><center>Bajaj Finance Ltd.</center></td>
+<td><center>Rs.1023.85</center></td>
+<td><center>0.63%</center></td>
+</tr>
+</table>
+</section>
+<br>
+<br>
+<hr>
+<br>
+<section>
+<h1><u>Interest & Total Amount  Calculator : </u></h1>
+<form>
+<label>Principle Value :</label><input type="text" id="principle">
+<br>
+<label>Rate of Return :</label><input type="text" id="rate">
+<br>
+<label>Time Period :</label><input type="text" id="time" 
+placeholder="In Years">
+<br>
+<input type="button" onclick="cal(principle,rate,time)" 
+value="Calculate">
+<br>
+<label>Interest :</label><input type="text" id="value">
+<br>
+<label>Total Value :</label><input type="text" id="total">
+</form>
+<br>
+<br>
+</section>
+<hr>
+<a href="Form.html" target="_parent"><h2>You can Invest Online After You Log In To Your Account</h2></a>&nbsp;&nbsp;&nbsp;
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>LogIn</title>
+<style>
+body{background-color:skyblue;margin-left: 400px;margin-right: 400px;}
+a:link {text-decoration: none;color: Black;text-align: center;
+text-spacing:20%;font-size:0.7cm}
+form{border:5px solid blue;padding: 10px;border-radius: 5px;border-style: groove;}
+</style>
+<script>
+function showAlert()
+{alert("Form has been Submited");}
+</script>
+</head> 
+<body>
+<center>
+<h1><u>Log In : </u></h1>
+<br>
+<form action="index.html" method="post" onsubmit="showAlert()">
+<br>
+<br>
+<label>User Id : </label><input type="text" required>
+<br>
+<br>
+<label>Password : </label><input type="password" required>
+<br>
+<br>
+<input type="submit">
+<br>
+<br>
+<input type="reset">
+</form>
+<a href="index.html">Back To Home</a>
+</body>
+</html>

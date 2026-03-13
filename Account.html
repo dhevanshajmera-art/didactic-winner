@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Want To Open An Account</title>
+<style>
+body{background-color:skyblue;}
+a:link {text-decoration: none;color: Black;text-align: center;
+text-spacing:20%;font-size:0.7cm}
+hr{height: 5px; background-color:black;}
+label{font-size:25px;}
+table{border:2.5; font-size:25px;}
+input[type=radio] {height:4%; width:4%;}
+input[type=text] {height:5%; width:12%;}
+input[type=submit] {height:5%; width:8%;}
+input[type=reset] {height:5%; width:8%;}
+</style>
+<script>
+function showAlert()
+{alert("Your details have been Submited");}
+</script>
+</head>
+<body>
+<section>
+<img src="banking.png" height="100px" width="160">
+
+<a href="index.html" target="_parent">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="Form.html" target="_parent">Log In</a>&nbsp;&nbsp;&nbsp;
+<a href="Banking.html" target="_parent">Banking</a>&nbsp;&nbsp;&nbsp;
+<a href="Investing.html" target="_parent">Investing</a>&nbsp;&nbsp;&nbsp;
+<a href="Account.html" target="_parent">Want To Open An Account </a>
+</section>
+<hr>
+<section>
+<form action="wsdmini.html" method="post" onsubmit="showAlert()">
+<h1>Choose The Type Of Account You Want To Open </h1>
+<br>
+<label>Savings Account</label><input type="radio" name="c1" required>
+<br>
+<label>Current Account</label><input type="radio" name="c1" required>
+<br>
+<label>Salary Account</label><input type="radio" name="c1" required>
+<br>
+<label>Fixed Deposit(FD) Account</label>
+<input type="radio" name="c1" required>
+<br>
+<label>Recurring Deposit(RD) Account</label>
+<input type="radio" name="c1" required>
+<br>
+<label>Demat Account</label><input type="radio" name="c1" v>
+<br>
+<label>NRI Account</label><input type="radio" required>
+<br>
+<label>Senior Citizen Account</label><input type="radio" name="c1" required>
+<br>
+<br>
+<br><br>
+<label>Full Name</label>
+<input type="text" required>
+<br>
+<label>Mobile No</label>
+<input type="text" required>
+<br>
+<label>Mail</label>
+<input type="text" required>
+<br>
+<label>Adhar Card No</label>
+<input type="text" required>
+<br>
+<label>PAN Card No</label>
+<input type="text" required>
+<br>
+<label>D.O.B.</label>
+<input type="date" required>
+<br>
+<label>Gender</label>
+<select>
+<option>Male</option>
+<option>Female</option>
+</select>
+<br>
+<br>
+<input type="submit">
+<br><br>
+<input type="reset">
+</form>
+</section>
+</body>
+</html>
